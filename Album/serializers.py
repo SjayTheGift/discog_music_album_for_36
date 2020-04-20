@@ -9,4 +9,4 @@ class MusicSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Music
-        fields = ['url', 'cover_image', 'artist', 'title', 'label', 'year', 'catalogue_number']
+        fields = ['url', 'id', 'cover_image', 'artist', 'title', 'label', 'year', 'catalogue_number']

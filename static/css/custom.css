@@ -1,8 +1,50 @@
-#cover{
-        background: url("img/dj.jpg");
-        background-repeat: no-repeat;
-        background-size: auto;
+.intro {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	-webkit-transform: translate(0%, -50%);
+	-moz-transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+	-o-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+	padding: 0 15px;
 }
+
+.bg-color{
+    background-color:#d02626db;
+}
+
+}
+.dataTables_wrapper .dataTables_paginate
+.paginate_button.disabled, .dataTables_wrapper
+.dataTables_paginate .paginate_button.disabled:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    color: #fff !important;
+}
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+    color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate
+.paginate_button.disabled, .dataTables_wrapper
+.dataTables_paginate .paginate_button.disabled:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    color: #fff !important;
+}
+
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    color: #fff;
+}
+
 .box-wrapper{
     width: 500px;
     margin: 0 auto;
@@ -13,16 +55,6 @@
 h1{
     color:#fff;
 }
-#login .container #login-row #login-column #login-box {
-    margin-top: 120px;
-    max-width: 600px;
-    height: 320px;
-    border: 1px solid #9C9C9C;
-    background-color: #EAEAEA;
-}
-#login .container #login-row #login-column #login-box #login-form {
-    padding: 20px;
-}
-#login .container #login-row #login-column #login-box #login-form #register-link {
-    margin-top: -85px;
+.custom-table{
+    background: #fff;
 }

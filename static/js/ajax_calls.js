@@ -86,7 +86,6 @@ $(document).ready(function() {
     });
 
 
-
     //logout
     $('#logout').click(function(){
         $.ajax({
@@ -94,12 +93,14 @@ $(document).ready(function() {
               data:{
                 csrfmiddlewaretoken: $('#logout_form').find('input[name="csrfmiddlewaretoken"]').val(),
               },
-              url: 'http://127.0.0.1:8000/rest-auth/logout/',
+              url: '/rest-auth/logout/',
               dataType: 'json',
               success : function(data){
                     window.location = "/logout/";
               },
          });
     });
+
+
 
 });

@@ -9,7 +9,7 @@
        {{ mess }}
     </div>
     {% endfor %} {% endif %}
-    <div class="center-everything">
+    <div class="intro">
         <div class="box-wrapper shadow p-4 mb-4 bg-white">
             <h4 class="mb-4">Sign-Up</h4>
             <form class="needs-validation"  novalidate id="register_form">
@@ -26,7 +26,7 @@
                     <input name="password2" id="password2" type='password' class="form-control"  placeholder="Password Again" required>
                     <span class="help-inline error"></span>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block  mb-4 btn-black" id="submit">Sign Up</button>
+                <button type="submit" class="btn btn-danger btn-block  mb-4 btn-black" id="submit">Sign Up</button>
                 <p class="float-left">Already have an account? <a href="{% url 'sign_in' %}">Login</a> </p>
                 <br/>
             </form>

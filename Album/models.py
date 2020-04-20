@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Music(models.Model):
-    cover_image = models.ImageField(upload_to='images/', blank=True, null=True)
+    cover_image = models.TextField(blank=True, null=True)
     artist = models.CharField(max_length=300, blank=True, null=True)
     title = models.CharField(max_length=300, blank=True, null=True)
     label = models.CharField(max_length=300, blank=True, null=True)

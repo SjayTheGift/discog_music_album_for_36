@@ -21,3 +21,8 @@ class LogoutView(generic.TemplateView):
 class AlbumView(LoginRequiredMixin, generic.TemplateView):
     login_url = '/login/'
     template_name = 'albums.html'
+
+
+class AlbumDetailView(LoginRequiredMixin, generic.TemplateView):
+    login_url = '/login/'
+    template_name = 'album_detail.html'
