@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="container mt-4 mb-4">
+    {% if messages %} {% for mess in messages %}
+    <div id="success-alert" class="alert alert-{{ mess.tags }}">
+       {{ mess }}
+    </div>
+    {% endfor %} {% endif %}
+    <div class="center-everything">
+        <div class="box-wrapper shadow p-4 mb-4 bg-white">
+            <h4 class="mb-4">Sign-Up</h4>
+            <form class="needs-validation"  novalidate id="register_form">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input name="email" id="email" type='email' class="form-control"  placeholder="Email" required>
+                    <span class="help-inline error"></span>
+                </div>
+                <div class="form-group">
+                    <input name="password1" id="password1" type='password' class="form-control"  placeholder="Password" required>
+                    <span class="help-inline error"></span>
+                </div>
+                <div class="form-group">
+                    <input name="password2" id="password2" type='password' class="form-control"  placeholder="Password Again" required>
+                    <span class="help-inline error"></span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block  mb-4 btn-black" id="submit">Sign Up</button>
+                <p class="float-left">Already have an account? <a href="{% url 'sign_in' %}">Login</a> </p>
+                <br/>
+            </form>
+        </div>
+    </div>
+</div>
+<!--end container-->
+
+{% endblock content %}

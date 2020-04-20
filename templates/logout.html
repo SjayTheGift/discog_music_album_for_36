@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container mt-4 mb-4">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card-body">
+                <h2>"You Have Been Logged out..."</h2>
+                <h5>Please come back again soon...</h5>
+                <p><a href="{% url 'sign_in'  %}">Login Again</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end container-->
+
+{% endblock content %}

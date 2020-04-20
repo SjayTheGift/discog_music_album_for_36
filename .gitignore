@@ -1,0 +1,7 @@
+*.csv
+*.pyc
+.DS_Store
+*.cfg
+*.sql
+*.db
+sandbox.py
